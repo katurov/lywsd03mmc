@@ -2,6 +2,8 @@
 
 Reading Xiaomi Thermometers data using BLE to use in something else.
 
+![picture](LYWSD03MMC.jpg)
+
 Where I start:
   * [This video](https://youtu.be/ExFxuvfCbAU?si=BxsuaZ9HShyMFUsc) give me an Idea
   * [His example](https://github.com/VolosR/XiaomiBLE) can explain how to convert from bytes to readable values (temperature, humidity, battery and its percentage)
