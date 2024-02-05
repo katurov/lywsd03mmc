@@ -7,7 +7,7 @@ Reading Xiaomi Thermometers data using BLE to use in something else.
 Where I start:
   * [This video](https://youtu.be/ExFxuvfCbAU?si=BxsuaZ9HShyMFUsc) give me an Idea
   * [His example](https://github.com/VolosR/XiaomiBLE) can explain how to convert from bytes to readable values (temperature, humidity, battery and its percentage)
-  * [This project](https://github.com/keks51/lywsd03mmc-client) is very good in expaining of how to get values, but on my MacBook 2020 M1 Pro it iss always run to **segmentation fault**
+  * [This project](https://github.com/keks51/lywsd03mmc-client) is very good in expaining of how to get values, but on my MacBook 2020 M1 Pro it is always run to **segmentation fault**
   * [Bleak](https://github.com/hbldh/bleak/tree/master) itself: I've used its examples to locate my device
 
 ## Quick start
@@ -19,7 +19,7 @@ A093B113-0263-25E8-608D-0A7D3024FAF7: LYWSD03MMC
 AdvertisementData(local_name='LYWSD03MMC', service_data={'0000fe95-0000-1000-8000-00805f9b34fb': b'0X[\x05GG\xa9\xbc8\xc1\xa4\x08'}, rssi=-71)
 ```
 
-Now use ```python3 service_explorer.py --address A093B113-0263-25E8-608D-0A7D3024FAF7 --services ebe0ccb0-7a0a-4b0c-8a1a-6ff2997da3a6``` with [service_explorer.py](https://github.com/hbldh/bleak/blob/master/examples/service_explorer.py); where ```--address``` is quite the same as you get before and ```--services``` are the key I geet from ESP32 example. Please, note that devices have names started with "LYWSD0..." (saw it in YT-video). The result will be like this:
+Now use ```python3 service_explorer.py --address A093B113-0263-25E8-608D-0A7D3024FAF7 --services ebe0ccb0-7a0a-4b0c-8a1a-6ff2997da3a6``` with [service_explorer.py](https://github.com/hbldh/bleak/blob/master/examples/service_explorer.py); where ```--address``` is quite the same as you get before and ```--services``` are the key I get from ESP32 example. Please, note that devices have names started with "LYWSD0..." (saw it in YT-video). The result will be like this:
 ```
 2024-02-04 22:58:22,571 __main__ INFO: starting scan...
 2024-02-04 22:58:30,957 __main__ INFO: connecting to device...
