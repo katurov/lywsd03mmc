@@ -78,3 +78,9 @@ I think this IS **the big problem** if you want to request values friequently - 
 ## Timeouts
 
 Each request have to wait up to a minute to receive values so think about timeout of the operation.
+
+## Using the program
+
+```./getSquareData.py --address A093B113-0263-25E8-608D-0A7D3024FAF7```
+
+I've made it as ```+x``` script to run from BetterTouchTool environment but you can make it kind of a server or something
